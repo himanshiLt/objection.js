@@ -7,9 +7,11 @@ preRun:
 preMerge:
   pattern:
     - "./tests/unit/utils.js"
+    - "./tests/unit/*/*.js"
 postMerge:
   pattern: 
     - "./tests/unit/utils.js"
+    - "./tests/unit/*/*.js"
 postRun:
      command:
         - node --version
