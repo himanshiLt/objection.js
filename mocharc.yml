@@ -1,0 +1,4 @@
+slow: '10'
+timeout: '15000' 
+recursive: true
+ignore: '/tests/unit/relations/files/**'

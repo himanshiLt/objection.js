@@ -1,0 +1,19 @@
+---
+framework: mocha
+preRun:
+     command:
+        - npm ci
+        - npm run eslint
+preMerge:
+  pattern:
+    - "./tests/unit/*.js"
+    - "./tests/unit/**/*.js"
+postMerge:
+  pattern: 
+    - "./tests/unit/*.js"
+    - "./tests/unit/**/*.js"
+postRun:
+     command:
+        - node --version
+configFile: mocharc.yml
+version: 1.0
